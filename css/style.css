@@ -1,0 +1,120 @@
+body {
+	font-family: 'Joystix Monospace';
+	color: white;
+	background: #242424;
+	font-size: 14px;
+}
+
+#container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: calc(100% - 128px - 40px);
+	height: calc(100% - 20px);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 10px solid transparent;
+	border-image: url(../images/Frame.svg) 10 round;
+	background: rgba(0,0,0,1);
+}
+
+#container2 {
+	position: absolute;
+	top: 0px;
+	left: calc(100% - 128px - 20px);
+	width: calc(32px * 4);
+	height: calc(100% - 20px);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: 10px solid transparent;
+	border-image: url(../images/Frame.svg) 10 round;
+	background: rgba(0,0,0,1);
+}
+
+img {
+	width: 32px;
+	height: 32px;
+}
+
+#items {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+#tools {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+#healthnode {
+	width: 32px;
+	height: 32px;
+}
+
+#healthnodetext {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+}
+
+#healthfragment {
+	width: 32px;
+	height: 32px;
+}
+
+#healthfragmenttext {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+}
+
+#powernode {
+	width: 32px;
+	height: 32px;
+}
+
+#powernodetext {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+}
+
+#powerfragment {
+	width: 32px;
+	height: 32px;
+}
+
+#powerfragmenttext {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+}
+
+#sizenode {
+	width: 32px;
+	height: 32px;
+}
+
+#sizenodetext {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+}
+
+#rangenode {
+	width: 32px;
+	height: 32px;
+}
+
+#rangenodetext {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+}
+
