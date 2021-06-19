@@ -15,8 +15,6 @@ body {
 	flex-direction: column;
 	flex-wrap: wrap;
 	border: 10px solid transparent;
-	border-image: url(../images/Frame.svg) 10 round;
-	background: rgba(0,0,0,1);
 }
 
 #container2 {
@@ -29,8 +27,6 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	border: 10px solid transparent;
-	border-image: url(../images/Frame.svg) 10 round;
-	background: rgba(0,0,0,1);
 }
 
 img {
