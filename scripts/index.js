@@ -1,4 +1,4 @@
-const websocket_endpoint = "wss://relay.aricodes.net/ws";
+const websocket_endpoint = "ws://localhost:19906";
 var items = document.getElementById("items");
 var tools = document.getElementById("tools");
 
@@ -11,18 +11,9 @@ var rangenodetext = document.getElementById("rangenodetext");
 
 window.onload = function () 
 {
-	const queryString = window.location.search;
-	const urlParams = new URLSearchParams(queryString);
-	const username = urlParams.get('username');
-	if (username != null) {
-		const socket = new WebSocket(websocket_endpoint);
-		socket.onopen = () => socket.send(`listen:${username}`);
-		socket.onmessage = (event) => appendData(JSON.parse(event.data));
-	}
-	else {
-		let mainContainer = document.getElementById("srtQueryData");
-		mainContainer.innerHTML = "Please provide username params to url to listen to.";
-	}
+	const socket = new WebSocket(websocket_endpoint);
+	socket.onopen = () => socket.send(`listen:${username}`);
+	socket.onmessage = (event) => appendData(JSON.parse(event.data));
 };
 
 function appendData(data) 
